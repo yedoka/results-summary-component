@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    border-radius: 30px;
+    width: 800px;
+    box-shadow: 0 100px 100px rgb(0 0 0 / 10%);
+}
+
+.container .left-card{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.container .title {
+    font-size: 1.75rem;
+    padding: 20px;
+    font-weight: 700;
+    opacity: 0.7;
+}
+
+
+.container .circle {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.circle .score100 {
+    font-size: 1rem;
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+.great {
+    font-size: 2rem;
+    padding-top: 30px;
+    font-weight: 700;
+}
+
+p {
+    width: 75%;
+    opacity: 0.7;
+}
+
+.container .right-card {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    display: grid;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.right-card .summary {
+    font-weight: 700;
+    font-size: 1.75rem; 
+    color: hsl(224, 30%, 27%);  
+}
+
+.right-card .reaction {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    width: 300px;
+    padding: 1rem;
+    color: hsl(0, 100%, 67%);
+    display: flex;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.right-card .memory {
+    background-color: hsla(39, 100%, 56%, 0.1);
+    padding: 1rem;
+    color: hsl(39, 100%, 56%);
+    display: flex;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.right-card .verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    padding: 1rem;
+    color: hsl(166, 100%, 37%);
+    display: flex;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.right-card .visual {
+    background-color: hsla(234, 85%, 45%, 0.1);
+    padding: 1rem;
+    color: hsla(234, 85%, 45%);
+    display: flex;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.score {
+    margin-left: auto;
+    color: hsl(224, 30%, 27%);
+}
+
+button {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container .left-card,
+    .container .right-card {
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    .container .title,
+    .container .circle,
+    .great,
+    p {
+        width: 100%;
+    }
+}
